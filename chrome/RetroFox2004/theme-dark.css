@@ -1,0 +1,225 @@
+/* RetroFox 2004 Dark Edition - Genuine Winstripe theme
+   Extracted from Firefox 1.0 classic.jar (skin/classic/browser/Toolbar.png).
+   Targets Firefox desktop chrome only. */
+
+:root,
+#main-window {
+  color-scheme: dark !important;
+  --toolbar-bgcolor: #1e1e1e !important;
+  --toolbar-color: #e0e0e0 !important;
+  --lwt-accent-color: #1e1e1e !important;
+  --lwt-text-color: #e0e0e0 !important;
+  --toolbarbutton-hover-background: #333333 !important;
+  --toolbarbutton-active-background: #2f2f2f !important;
+  --lwt-toolbar-field-background-color: #2a2a2a !important;
+  --lwt-toolbar-field-color: #e0e0e0 !important;
+  --lwt-toolbar-field-border-color: #555555 !important;
+  --tab-selected-bgcolor: #2a2a2a !important;
+  --tab-selected-textcolor: #e0e0e0 !important;
+}
+
+/* Grey/cream Windows XP-era interface. */
+#navigator-toolbox {
+  background-color: #1e1e1e !important;
+  border-bottom: 1px solid #444444 !important;
+}
+#toolbar-menubar,
+#PersonalToolbar {
+  background: linear-gradient(#2a2a2a, #222222) !important;
+  color: #e0e0e0 !important;
+  border-bottom: 1px solid #444444 !important;
+}
+#toolbar-menubar { border-bottom: 1px solid #444444 !important; }
+#nav-bar {
+  background: linear-gradient(to bottom, #2a2a2a 0%, #252525 52%, #1f1f1f 100%) !important;
+  border-top: 1px solid #2a2a2a !important;
+  border-bottom: 1px solid #444444 !important;
+  box-shadow: inset 0 1px #2a2a2a !important;
+  min-height: 43px !important;
+}
+
+/* Visible old-fashioned raised rectangular toolbar buttons. */
+#nav-bar .toolbarbutton-1 {
+  border: 1px solid transparent !important;
+  border-radius: 3px !important;
+  margin-inline: 1px !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+#nav-bar .toolbarbutton-1:not([disabled]):hover {
+  border-color: #555555 !important;
+  background: linear-gradient(#2a2a2a, #333333) !important;
+  box-shadow: inset 1px 1px 0 #2a2a2a !important;
+}
+#nav-bar .toolbarbutton-1:not([disabled]):active {
+  border-color: #555555 !important;
+  background: linear-gradient(#2f2f2f, #2f2f2f) !important;
+  box-shadow: inset 1px 1px 1px #555555 !important;
+}
+
+/* Genuine Winstripe icons. */
+#back-button,
+#back-button > .toolbarbutton-icon { list-style-image: url("icons/back-normal.png") !important; }
+#back-button:not([disabled]):hover,
+#back-button:not([disabled]):hover > .toolbarbutton-icon { list-style-image: url("icons/back-hover.png") !important; }
+#back-button[disabled],
+#back-button[disabled] > .toolbarbutton-icon { list-style-image: url("icons/back-disabled.png") !important; }
+
+#forward-button,
+#forward-button > .toolbarbutton-icon { list-style-image: url("icons/forward-normal.png") !important; }
+#forward-button:not([disabled]):hover,
+#forward-button:not([disabled]):hover > .toolbarbutton-icon { list-style-image: url("icons/forward-hover.png") !important; }
+#forward-button[disabled],
+#forward-button[disabled] > .toolbarbutton-icon { list-style-image: url("icons/forward-disabled.png") !important; }
+
+#stop-button,
+#stop-button > .toolbarbutton-icon { list-style-image: url("icons/stop-normal.png") !important; }
+#stop-button:not([disabled]):hover,
+#stop-button:not([disabled]):hover > .toolbarbutton-icon { list-style-image: url("icons/stop-hover.png") !important; }
+#stop-button[disabled],
+#stop-button[disabled] > .toolbarbutton-icon { list-style-image: url("icons/stop-disabled.png") !important; }
+
+#reload-button,
+#reload-button > .toolbarbutton-icon { list-style-image: url("icons/reload-normal.png") !important; }
+#reload-button:not([disabled]):hover,
+#reload-button:not([disabled]):hover > .toolbarbutton-icon { list-style-image: url("icons/reload-hover.png") !important; }
+#reload-button[disabled],
+#reload-button[disabled] > .toolbarbutton-icon { list-style-image: url("icons/reload-disabled.png") !important; }
+
+#home-button,
+#home-button > .toolbarbutton-icon { list-style-image: url("icons/home-normal.png") !important; }
+#home-button:not([disabled]):hover,
+#home-button:not([disabled]):hover > .toolbarbutton-icon { list-style-image: url("icons/home-hover.png") !important; }
+#home-button[disabled],
+#home-button[disabled] > .toolbarbutton-icon { list-style-image: url("icons/home-disabled.png") !important; }
+
+#downloads-button,
+#downloads-button > .toolbarbutton-icon { list-style-image: url("icons/downloads-normal.png") !important; }
+#downloads-button:not([disabled]):hover,
+#downloads-button:not([disabled]):hover > .toolbarbutton-icon { list-style-image: url("icons/downloads-hover.png") !important; }
+#downloads-button[disabled],
+#downloads-button[disabled] > .toolbarbutton-icon { list-style-image: url("icons/downloads-disabled.png") !important; }
+
+#history-button,
+#history-button > .toolbarbutton-icon { list-style-image: url("icons/history-normal.png") !important; }
+#history-button:not([disabled]):hover,
+#history-button:not([disabled]):hover > .toolbarbutton-icon { list-style-image: url("icons/history-hover.png") !important; }
+#history-button[disabled],
+#history-button[disabled] > .toolbarbutton-icon { list-style-image: url("icons/history-disabled.png") !important; }
+
+#bookmarks-button,
+#bookmarks-button > .toolbarbutton-icon { list-style-image: url("icons/bookmarks-normal.png") !important; }
+#bookmarks-button:not([disabled]):hover,
+#bookmarks-button:not([disabled]):hover > .toolbarbutton-icon { list-style-image: url("icons/bookmarks-hover.png") !important; }
+#bookmarks-button[disabled],
+#bookmarks-button[disabled] > .toolbarbutton-icon { list-style-image: url("icons/bookmarks-disabled.png") !important; }
+
+#print-button,
+#print-button > .toolbarbutton-icon { list-style-image: url("icons/print-normal.png") !important; }
+#print-button:not([disabled]):hover,
+#print-button:not([disabled]):hover > .toolbarbutton-icon { list-style-image: url("icons/print-hover.png") !important; }
+#print-button[disabled],
+#print-button[disabled] > .toolbarbutton-icon { list-style-image: url("icons/print-disabled.png") !important; }
+
+#new-tab-button,
+#new-tab-button > .toolbarbutton-icon { list-style-image: url("icons/new-tab-normal.png") !important; }
+#new-tab-button:not([disabled]):hover,
+#new-tab-button:not([disabled]):hover > .toolbarbutton-icon { list-style-image: url("icons/new-tab-hover.png") !important; }
+#new-tab-button[disabled],
+#new-tab-button[disabled] > .toolbarbutton-icon { list-style-image: url("icons/new-tab-disabled.png") !important; }
+
+#new-window-button,
+#new-window-button > .toolbarbutton-icon { list-style-image: url("icons/new-window-normal.png") !important; }
+#new-window-button:not([disabled]):hover,
+#new-window-button:not([disabled]):hover > .toolbarbutton-icon { list-style-image: url("icons/new-window-hover.png") !important; }
+#new-window-button[disabled],
+#new-window-button[disabled] > .toolbarbutton-icon { list-style-image: url("icons/new-window-disabled.png") !important; }
+
+#cut-button,
+#cut-button > .toolbarbutton-icon { list-style-image: url("icons/cut-normal.png") !important; }
+#cut-button:not([disabled]):hover,
+#cut-button:not([disabled]):hover > .toolbarbutton-icon { list-style-image: url("icons/cut-hover.png") !important; }
+#cut-button[disabled],
+#cut-button[disabled] > .toolbarbutton-icon { list-style-image: url("icons/cut-disabled.png") !important; }
+
+#copy-button,
+#copy-button > .toolbarbutton-icon { list-style-image: url("icons/copy-normal.png") !important; }
+#copy-button:not([disabled]):hover,
+#copy-button:not([disabled]):hover > .toolbarbutton-icon { list-style-image: url("icons/copy-hover.png") !important; }
+#copy-button[disabled],
+#copy-button[disabled] > .toolbarbutton-icon { list-style-image: url("icons/copy-disabled.png") !important; }
+
+#paste-button,
+#paste-button > .toolbarbutton-icon { list-style-image: url("icons/paste-normal.png") !important; }
+#paste-button:not([disabled]):hover,
+#paste-button:not([disabled]):hover > .toolbarbutton-icon { list-style-image: url("icons/paste-hover.png") !important; }
+#paste-button[disabled],
+#paste-button[disabled] > .toolbarbutton-icon { list-style-image: url("icons/paste-disabled.png") !important; }
+
+/* Go button */
+#go-button,
+#go-button > .toolbarbutton-icon { list-style-image: url("icons/Go.png") !important; }
+
+/* Keep coloured raster icons at native 24x24px. */
+:is(#back-button,#forward-button,#stop-button,#reload-button,#home-button,
+    #downloads-button,#history-button,#bookmarks-button,#print-button,
+    #new-tab-button,#new-window-button,#cut-button,#copy-button,#paste-button)
+    > .toolbarbutton-icon {
+  width: 24px !important;
+  min-width: 24px !important;
+  height: 24px !important;
+  min-height: 24px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Square address box. */
+#urlbar-background, #searchbar {
+  border: 1px solid #555555 !important;
+  border-radius: 2px !important;
+  background: #1a1a1a !important;
+  box-shadow: inset 0 1px 1px #111111 !important;
+}
+#urlbar[focused] > #urlbar-background,
+#urlbar:focus-within > #urlbar-background {
+  border-color: #555555 !important;
+  outline: 1px solid #333333 !important;
+}
+
+/* Old-fashioned tab geometry. */
+#TabsToolbar {
+  background: linear-gradient(#2a2a2a, #222222) !important;
+  border-bottom: 1px solid #444444 !important;
+}
+.tabbrowser-tab:not([selected]) .tab-background {
+  background: linear-gradient(#222222, #1a1a1a) !important;
+  border: 1px solid #555555 !important;
+  border-radius: 5px 5px 0 0 !important;
+  box-shadow: inset 0 1px #2a2a2a !important;
+}
+.tabbrowser-tab[selected] .tab-background {
+  background: linear-gradient(#2a2a2a, #2f2f2f) !important;
+  border: 1px solid #555555 !important;
+  border-radius: 5px 5px 0 0 !important;
+  box-shadow: inset 0 2px #2a2a2a !important;
+}
+#PersonalToolbar .toolbarbutton-1:hover {
+  background: #333333 !important;
+  border-radius: 2px !important;
+}
+#PersonalToolbar .toolbarseparator {
+  background: #444444 !important;
+  border-color: #444444 !important;
+}
+
+/* Throbber */
+#navigator-throbber {
+  list-style-image: url("icons/Throbber-small.png") !important;
+}
+#navigator-throbber[busy="true"] {
+  list-style-image: url("icons/Throbber-small.gif") !important;
+}
+/* Throbber-small.gif not extracted; fallback to png if missing */

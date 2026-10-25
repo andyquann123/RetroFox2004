@@ -1,0 +1,22 @@
+# Firefox profiles and backups (never commit)
+Profiles/
+*.default*/
+chrome_backup_*/
+*.jsonlz4
+places.sqlite*
+cookies.sqlite*
+key*.db
+prefs.js
+user.js
+sessionstore*
+*.bak
+*.tmp
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
+
+# Build artifacts
+dist/
